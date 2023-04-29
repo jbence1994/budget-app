@@ -2,7 +2,7 @@ using BudgetApp.Core.Models;
 using BudgetApp.Domain.Services;
 using NUnit.Framework;
 
-namespace BudgetApp.Domain.Tests
+namespace BudgetApp.Domain.Tests.Services
 {
     public class RecordManagerTests
     {
