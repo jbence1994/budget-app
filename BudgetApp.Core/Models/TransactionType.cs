@@ -1,8 +1,9 @@
-namespace BudgetApp.Core.Models;
-
-public enum TransactionType
+namespace BudgetApp.Core.Models
 {
-    Income,
-    Expense,
-    Saving
+    public enum TransactionType
+    {
+        Income,
+        Expense,
+        Saving
+    }
 }
