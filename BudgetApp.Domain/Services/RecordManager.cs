@@ -1,37 +1,29 @@
+using BudgetApp.Application.ViewModels;
 using BudgetApp.Core.Models;
 
 namespace BudgetApp.Domain.Services
 {
     public class RecordManager
     {
-        public IncomeRecord CreateIncomeRecord(
-            double amount,
-            string source,
-            IncomeCategory incomeCategory,
-            string comment
-        )
+        public IncomeRecord CreateIncomeRecord(CreateIncomeRecordViewModel createIncomeRecordViewModel)
         {
             return new IncomeRecord
             {
-                Amount = amount,
-                Source = source,
-                Category = incomeCategory,
-                Comment = comment,
+                Amount = createIncomeRecordViewModel.Amount,
+                Source = createIncomeRecordViewModel.Source,
+                Category = (IncomeCategory)createIncomeRecordViewModel.Category,
+                Comment = createIncomeRecordViewModel.Comment,
                 CreatedDateTime = DateTime.Now
             };
         }
 
-        public ExpenseRecord CreateExpenseRecord(
-            double amount,
-            ExpenseCategory expenseCategory,
-            string comment
-        )
+        public ExpenseRecord CreateExpenseRecord(CreateExpenseRecordViewModel createExpenseRecordViewModel)
         {
             return new ExpenseRecord
             {
-                Amount = amount,
-                Category = expenseCategory,
-                Comment = comment,
+                Amount = createExpenseRecordViewModel.Amount,
+                Category = (ExpenseCategory)createExpenseRecordViewModel.Category,
+                Comment = createExpenseRecordViewModel.Comment,
                 CreatedDateTime = DateTime.Now
             };
         }
