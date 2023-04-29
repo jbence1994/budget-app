@@ -1,4 +1,6 @@
-﻿namespace BudgetApp.Desktop
+﻿using BudgetApp.Desktop.Windows;
+
+namespace BudgetApp.Desktop
 {
     public class Application
     {
@@ -6,7 +8,7 @@
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            System.Windows.Forms.Application.Run(new Form1());
+            System.Windows.Forms.Application.Run(new MainWindow());
         }
     }
 }
