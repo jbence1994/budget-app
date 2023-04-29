@@ -9,5 +9,5 @@
 - If you are opening a pull request, please use the following branch naming convention:
 
 ```
-[github-username]/[describe the task]
+[github-username]/[describe-briefly-your-task]
 ```

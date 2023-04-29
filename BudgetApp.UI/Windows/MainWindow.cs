@@ -1,4 +1,4 @@
-﻿namespace BudgetApp.Desktop.Windows
+﻿namespace BudgetApp.UI.Windows
 {
     public partial class MainWindow : Form
     {

@@ -1,6 +1,6 @@
-﻿using BudgetApp.Desktop.Windows;
+using BudgetApp.UI.Windows;
 
-namespace BudgetApp.Desktop
+namespace BudgetApp.UI
 {
     public class Application
     {
