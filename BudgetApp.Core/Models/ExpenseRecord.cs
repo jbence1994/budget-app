@@ -2,6 +2,6 @@ namespace BudgetApp.Core.Models
 {
     public class ExpenseRecord : Record
     {
-        public Category Category { get; set; }
+        public ExpenseCategory Category { get; set; }
     }
 }
