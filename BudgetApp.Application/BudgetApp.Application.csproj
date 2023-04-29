@@ -6,9 +6,4 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\BudgetApp.Application\BudgetApp.Application.csproj" />
-      <ProjectReference Include="..\BudgetApp.Core\BudgetApp.Core.csproj" />
-    </ItemGroup>
-
 </Project>
