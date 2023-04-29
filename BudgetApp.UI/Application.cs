@@ -1,3 +1,5 @@
+using BudgetApp.UI.Windows;
+
 namespace BudgetApp.UI
 {
     public class Application
@@ -6,7 +8,7 @@ namespace BudgetApp.UI
         public static void Main()
         {
             ApplicationConfiguration.Initialize();
-            System.Windows.Forms.Application.Run(new Form1());
+            System.Windows.Forms.Application.Run(new MainWindow());
         }
     }
 }
