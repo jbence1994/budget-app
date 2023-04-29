@@ -10,9 +10,12 @@ namespace BudgetApp.Core.Models
         Subscription,
         TechnicalGoods,
         Rent,
+        Banking,
+        Education,
         Car,
         Furniture,
         NewspaperOrBooks,
+        Saving,
         Other
     }
 }
