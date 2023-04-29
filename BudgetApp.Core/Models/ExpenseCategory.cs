@@ -1,6 +1,6 @@
 namespace BudgetApp.Core.Models
 {
-    public enum Category
+    public enum ExpenseCategory
     {
         Food,
         Clothing,
