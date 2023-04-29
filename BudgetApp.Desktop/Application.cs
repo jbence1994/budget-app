@@ -5,7 +5,7 @@ namespace BudgetApp.Desktop
     public class Application
     {
         [STAThread]
-        static void Main()
+        publicstatic void Main()
         {
             ApplicationConfiguration.Initialize();
             System.Windows.Forms.Application.Run(new MainWindow());
