@@ -2,9 +2,17 @@ namespace BudgetApp.Core.Models
 {
     public enum Category
     {
-        // TODO: Add more
         Food,
+        Clothing,
+        Transport,
         Entertainment,
-        Energy
+        Energy,
+        Subscription,
+        TechnicalGoods,
+        Rent,
+        Car,
+        Furniture,
+        NewspaperOrBooks,
+        Other
     }
 }
