@@ -1,17 +1,22 @@
-﻿using System.Diagnostics;
-using BudgetApp.Application.ViewModels;
+﻿using BudgetApp.Application.ViewModels;
 using BudgetApp.Domain.Services;
+using Microsoft.Extensions.Logging;
 
 namespace BudgetApp.UI.Windows
 {
     public partial class MainWindow : Form
     {
+        private readonly ILogger<MainWindow> _logger;
         private readonly RecordManager _recordManager;
 
-        public MainWindow(RecordManager recordManager)
+        public MainWindow(
+            ILogger<MainWindow> logger,
+            RecordManager recordManager
+        )
         {
             InitializeComponent();
 
+            _logger = logger;
             _recordManager = recordManager;
         }
 
@@ -20,7 +25,7 @@ namespace BudgetApp.UI.Windows
             var incomeRecord = _recordManager.CreateIncomeRecord(
                 new CreateIncomeRecordViewModel()
             );
-            Debug.WriteLine($"Creating income record: {incomeRecord}");
+            _logger.Log(LogLevel.Information, $"Creating income record: {incomeRecord}");
         }
 
         private void ButtonCreateExpenseRecord_Click(object sender, EventArgs e)
@@ -28,7 +33,7 @@ namespace BudgetApp.UI.Windows
             var expenseRecord = _recordManager.CreateExpenseRecord(
                 new CreateExpenseRecordViewModel()
             );
-            Debug.WriteLine($"Creating expense record: {expenseRecord}");
+            _logger.Log(LogLevel.Information, $"Creating expense record: {expenseRecord}");
         }
     }
 }
