@@ -66,7 +66,6 @@
             this.comboBoxExpenseCategories.Name = "comboBoxExpenseCategories";
             this.comboBoxExpenseCategories.Size = new System.Drawing.Size(365, 31);
             this.comboBoxExpenseCategories.TabIndex = 2;
-            this.comboBoxExpenseCategories.SelectedIndexChanged += new System.EventHandler(this.ComboBoxExpenseCategories_SelectedIndexChanged);
             // 
             // comboBoxIncomeCategories
             // 
@@ -78,7 +77,6 @@
             this.comboBoxIncomeCategories.Name = "comboBoxIncomeCategories";
             this.comboBoxIncomeCategories.Size = new System.Drawing.Size(365, 31);
             this.comboBoxIncomeCategories.TabIndex = 3;
-            this.comboBoxIncomeCategories.SelectedIndexChanged += new System.EventHandler(this.ComboBoxIncomeCategories_SelectedIndexChanged);
             // 
             // MainWindow
             // 

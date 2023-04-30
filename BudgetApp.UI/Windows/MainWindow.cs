@@ -28,28 +28,24 @@ namespace BudgetApp.UI.Windows
 
         private void ButtonCreateIncomeRecord_Click(object sender, EventArgs e)
         {
-            var incomeRecord = _recordManager.CreateIncomeRecord(
-                new CreateIncomeRecordViewModel()
-            );
+            var incomeRecordViewModel = new CreateIncomeRecordViewModel
+            {
+                Category = comboBoxIncomeCategories.SelectedIndex
+            };
+
+            var incomeRecord = _recordManager.CreateIncomeRecord(incomeRecordViewModel);
             _logger.Log(LogLevel.Information, $"Creating income record: {incomeRecord}");
         }
 
         private void ButtonCreateExpenseRecord_Click(object sender, EventArgs e)
         {
-            var expenseRecord = _recordManager.CreateExpenseRecord(
-                new CreateExpenseRecordViewModel()
-            );
+            var expenseRecordViewModel = new CreateExpenseRecordViewModel
+            {
+                Category = comboBoxExpenseCategories.SelectedIndex
+            };
+
+            var expenseRecord = _recordManager.CreateExpenseRecord(expenseRecordViewModel);
             _logger.Log(LogLevel.Information, $"Creating expense record: {expenseRecord}");
-        }
-
-        private void ComboBoxIncomeCategories_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // TODO: set the selected category into the VM.
-        }
-
-        private void ComboBoxExpenseCategories_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // TODO: set the selected category into the VM.
         }
     }
 }
