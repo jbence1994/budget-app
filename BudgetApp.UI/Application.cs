@@ -1,3 +1,4 @@
+using BudgetApp.Domain.Services;
 using BudgetApp.UI.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -10,7 +11,15 @@ namespace BudgetApp.UI
         public static void Main()
         {
             var host = Host.CreateDefaultBuilder()
-                .ConfigureServices(serviceCollection => serviceCollection.AddScoped<MainWindow>())
+                .ConfigureServices(
+                    serviceCollection =>
+                    {
+                        // BudgetApp.Domain components
+                        serviceCollection.AddScoped<RecordManager>();
+
+                        // BudgetApp.UI components
+                        serviceCollection.AddScoped<MainWindow>();
+                    })
                 .Build();
 
             ApplicationConfiguration.Initialize();
