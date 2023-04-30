@@ -35,5 +35,15 @@ namespace BudgetApp.UI.Windows
             );
             _logger.Log(LogLevel.Information, $"Creating expense record: {expenseRecord}");
         }
+
+        private void ComboBoxIncomeCategories_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboBoxExpenseCategories_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
