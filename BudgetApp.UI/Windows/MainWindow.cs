@@ -20,6 +20,12 @@ namespace BudgetApp.UI.Windows
             _recordManager = recordManager;
         }
 
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+            comboBoxIncomeCategories.DataSource = Enum.GetValues(typeof(IncomeCategoryViewModel));
+            comboBoxExpenseCategories.DataSource = Enum.GetValues(typeof(ExpenseCategoryViewModel));
+        }
+
         private void ButtonCreateIncomeRecord_Click(object sender, EventArgs e)
         {
             var incomeRecord = _recordManager.CreateIncomeRecord(
@@ -38,12 +44,12 @@ namespace BudgetApp.UI.Windows
 
         private void ComboBoxIncomeCategories_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            // TODO: set the selected category into the VM.
         }
 
         private void ComboBoxExpenseCategories_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            // TODO: set the selected category into the VM.
         }
     }
 }
