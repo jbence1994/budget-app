@@ -1,7 +1,7 @@
 ﻿using BudgetApp.Core.Models;
 using BudgetApp.Core.Repositories;
 
-namespace BudgetApp.Persistence
+namespace BudgetApp.Persistence.Repositories
 {
     public class ExpenseRecordRepository : IExpenseRecordRepository
     {
