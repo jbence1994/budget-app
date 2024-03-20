@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetApp.Domain.Tests", "B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetApp.Application", "BudgetApp.Application\BudgetApp.Application.csproj", "{95E9AF31-5ED1-4A2F-82D8-DF1D361849C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetApp.Persistence", "BudgetApp.Persistence\BudgetApp.Persistence.csproj", "{AF797CEF-C87A-4A26-A4BF-A32366869C32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{95E9AF31-5ED1-4A2F-82D8-DF1D361849C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95E9AF31-5ED1-4A2F-82D8-DF1D361849C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95E9AF31-5ED1-4A2F-82D8-DF1D361849C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF797CEF-C87A-4A26-A4BF-A32366869C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF797CEF-C87A-4A26-A4BF-A32366869C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF797CEF-C87A-4A26-A4BF-A32366869C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF797CEF-C87A-4A26-A4BF-A32366869C32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
